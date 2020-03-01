@@ -1,0 +1,52 @@
+.header {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+
+    display: flex;
+    flex-direction: column;
+
+
+    .greenhouse-text {
+        font-size: 3em;
+        writing-mode: vertical-lr;
+        
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 90px;
+        transform: rotate(-180deg);
+        flex-grow: 5;
+
+    }
+
+    .social {
+        flex-grow: 3;
+        display: flex;
+        align-items: center;
+
+        color: #fff;
+        
+        a {
+            text-decoration: none;
+            transition: all .3s;
+            color: #000;
+            margin-right: 10px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+      display:none;
+    }
+
+    .picture {
+        display:none;
+    }
+}

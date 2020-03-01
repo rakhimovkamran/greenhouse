@@ -1,0 +1,54 @@
+.plants {
+    margin-top: 30px;
+    background: #fff;
+    padding-left: 30px;
+
+    .plant-slider {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+
+        .plant {
+            background: #000;
+            height: 150px;
+            border: 3px solid #000;
+
+            box-shadow: 0 10px 10px rgba(82, 82, 82, 0.3);
+
+            transition: all .5s;
+
+            &:hover {
+                transform: scale(.9);
+            }
+        }
+
+        .plant-2 {
+            border-right: none;
+        }
+
+        &-control {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            .moves {
+                font-size: 2em;
+                a { transition: all .4s; color: gray; margin-right: 20px; &:hover { color: #000; } }
+            }
+
+            .plant-state {
+                margin-right: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .state-line {
+                    display: inline-block;
+                    width: 50px;
+                    height: 2px;
+                    background: #000;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
